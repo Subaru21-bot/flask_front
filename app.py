@@ -15,6 +15,10 @@ def sobre():
 def login():
     return render_template("login.html")
 
+@app.route("/cadastro")
+def cadastro():
+    return render_template("cadastro.html")
+
 @app.route("/usuarios/<nome_usuario>")
 def usuario(nome_usuario):
     return render_template("usuarios.html", nome_usuario=nome_usuario)
